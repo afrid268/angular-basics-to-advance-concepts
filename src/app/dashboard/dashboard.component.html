@@ -1,0 +1,14 @@
+<div id="dashboard">
+  <div class="dashboard-item">
+    <app-server-status [_currentStatus]="currentStatus"></app-server-status>
+  </div>
+  <div class="dashboard-item">
+    <app-server-traffic-status
+      [trafficData]="dummyTrafficData"
+      [maxTraffic]="maxTraffic"
+    ></app-server-traffic-status>
+  </div>
+  <div class="dashboard-item">
+    <app-support-tickets></app-support-tickets>
+  </div>
+</div>
