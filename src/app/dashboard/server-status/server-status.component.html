@@ -1,4 +1,17 @@
 
+  <div [class]="{
+    status: true,
+    'status-online': currentStatus === 'online',
+    'status-offline': currentStatus === 'offline',
+    'status-unknown' : currentStatus === 'unknown'
+  }"
+    
+  /*
+inline class binding above
+ [style]="{
+    'font-size' : '64px'
+  }" inline dynamic style binding*/
+  >
   @if (currentStatus === "online") {
     <p>Servers are online</p>
     <p>All systems are operational.</p>
@@ -9,3 +22,4 @@
     <p>Server status is unknown</p>
     <p>Fetching server status failed.</p>
   }
+  </div>
